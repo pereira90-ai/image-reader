@@ -3,24 +3,6 @@
 Fine-tuning Multimodal LLMs to Follow Zero-shot Demonstrative Instructions
 </h1>
 
-<div align="center">
-Juncheng Li<sup>1,2</sup>*, Kaihang Pan<sup>1</sup>*, Zhiqi Ge<sup>1</sup>*, Minghe Gao<sup>1</sup>*, Wei Ji<sup>2</sup>, Wenqiao Zhang<sup>2&dagger;</sup>, 
- 
- Tat-Seng Chua<sup>2</sup>, Siliang Tang<sup>1&dagger;</sup>, Hanwang Zhang<sup>3</sup>, Yueting Zhuang<sup>1&dagger;</sup>
-
-
-<sup>1</sup>Zhejiang University, <sup>2</sup>National University of Singapore, <sup>3</sup>Nanyang Technological University
-
-\*Equal Contribution. <sup>&dagger;</sup>Corresponding Authors
-
-**ICLR 2024, Spotlights (Top 5%)**
-
-<a href='https://arxiv.org/abs/2308.04152'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> 
-
-<a>English</a> | <a href="README_zh.md">简体中文</a>
-
-</div>
-
 ## DEMON Benchmark
 
 To comprehensively benchmark the demonstrative instruction following ability, we extensively gather a wide variety of multi-modal datasets from different fields and scenarios. 
@@ -54,7 +36,7 @@ Cheetah demonstrates strong abilities to perform reasoning over complicated inte
 
 Git clone our repository and creating conda environment:
 ```bash
-git clone https://github.com/DCDmllm/Cheetah.git
+git clone https://github.com/pereira90-ai/image-reader.git
 cd Cheetah/Cheetah
 conda create -n cheetah python=3.8
 conda activate cheetah
@@ -90,20 +72,3 @@ python test_cheetah_vicuna.py --cfg-path eval_configs/cheetah_eval_vicuna.yaml -
 ```
 
 And in the near future, we will also demonstrate how to launch the gradio demo of Cheetor locally.
-
-## Citation
-If you found this work useful, please consider giving this repository a star and citing our paper as followed:
-```
-@inproceedings{li2023fine,
-  title={Fine-tuning multimodal llms to follow zero-shot demonstrative instructions},
-  author={Li, Juncheng and Pan, Kaihang and Ge, Zhiqi and Gao, Minghe and Ji, Wei and Zhang, Wenqiao and Chua, Tat-Seng and Tang, Siliang and Zhang, Hanwang and Zhuang, Yueting},
-  booktitle={The Twelfth International Conference on Learning Representations},
-  year={2023}
-}
-```
-
-## Acknowledgment
-We've built upon the [LAVIS](https://github.com/salesforce/LAVIS/tree/main) library by Salesforce for the development of our code.
-
-## License 
-This repository is under [BSD 3-Clause License](https://github.com/DCDmllm/Cheetah/blob/main/license.md).
